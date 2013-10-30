@@ -20,17 +20,10 @@
 
 - (void)viewDidLoad
 {
-//    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+
     photos = [[NSMutableArray alloc] init];
     
-//    networkCaptions = [[NSArray alloc] initWithObjects:@"Happy New Year!",@"Frosty Web", @"",nil];
-//    networkImages = [[NSArray alloc] initWithObjects:@"http://farm6.static.flickr.com/5042/5323996646_9c11e1b2f6_b.jpg", @"http://farm6.static.flickr.com/5007/5311573633_3cae940638.jpg", @"http://sphotos-g.ak.fbcdn.net/hphotos-ak-ash4/1012990_566218130084109_1360618124_n.jpg",nil];
-    
-    
     networkImages = [[NSMutableArray alloc] init];
-//    networkCaptions = [[NSMutableArray alloc] init];
     
     
     if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
@@ -48,14 +41,10 @@
     [self.view setBackgroundColor:[UIColor colorWithHexString:@"C22825"]];
     [_tableView setBackgroundColor:[UIColor clearColor]];
 
-//    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     UIImageView *imgTopo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topo.png"]];
     imgTopo.frame = CGRectMake(0, 0, 320,108.5);
     [self.view addSubview:imgTopo];
 
-//    UIImageView *imgLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_inter.png"]];
-//    imgLogo.frame = CGRectMake(2, 2, 60, 60);
-//    [imgTopo addSubview:imgLogo];
     
     UIButton *btComunidade = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     [btComunidade addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -66,7 +55,6 @@
     _tableView.separatorColor = [UIColor whiteColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
-//    _tableView.tableHeaderView = headView;
     
     UIView *footer = [[UIView alloc] initWithFrame:CGRectZero];
     [_tableView setTableFooterView:footer];
@@ -76,16 +64,6 @@
     else
         _tableView.frame = CGRectMake(0, imgTopo.frame.origin.y + imgTopo.frame.size.height, 320, self.view.frame.size.height - (imgTopo.frame.origin.y + imgTopo.frame.size.height));
     
-//    tblCount = 0;
-//    
-//    actv = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(320/2-50/2, self.view.frame.size.height/2-50/2, 50, 50)];
-//    [actv setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
-//    [_tableView addSubview:actv];
-//    [actv startAnimating];
-//    
-//    dicPhotos = [[NSMutableDictionary alloc] init];
-//    
-//    [self loadData];
     
 }
 
@@ -106,7 +84,7 @@
         
         
     } erro:^(int error) {
-//        [self performSelectorOnMainThread:@selector(alertFecharComErro:) withObject:[NSNumber numberWithInt:error] waitUntilDone:NO];
+
     }];
 }
 
@@ -161,8 +139,6 @@
 {
     
     BEELiveVideoViewController *bel = (BEELiveVideoViewController *)segue.destinationViewController;
-    NSString *str2 = (NSString *)sender;
-    
     
     bel.strUrl = sender;
     
@@ -187,9 +163,7 @@
 
     
     [self performSegueWithIdentifier:@"gotoLive" sender:strAux];
-    
-//    [self.navigationController pushViewController:networkGallery animated:YES];
-    
+        
 }
 
 

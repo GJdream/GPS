@@ -31,13 +31,4 @@
 }
 
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    
-//    UIImage *imgBack = [UIImage imageNamed:@"topo.png"];
-//    
-//    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"topo.png"] forBarMetrics:UIBarMetricsDefault];
-//    self.navigationBar.translucent = YES;
-//}
-
 @end

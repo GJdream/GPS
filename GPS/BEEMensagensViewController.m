@@ -25,22 +25,16 @@
 
 - (void)viewDidLoad
 {
-//    [super viewDidLoad];
 
-    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithHexString:@"C22825"];
     
     [self.view setBackgroundColor:[UIColor colorWithHexString:@"C22825"]];
     [_tableView setBackgroundColor:[UIColor clearColor]];
 
-//    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     UIImageView *imgTopo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topo.png"]];
     imgTopo.frame = CGRectMake(0, 0, 320, 108.5);
     [self.view addSubview:imgTopo];
 
-//    UIImageView *imgLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_inter.png"]];
-//    imgLogo.frame = CGRectMake(2, 2, 60, 60);
-//    [imgTopo addSubview:imgLogo];
     
     UIButton *btComunidade = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     [btComunidade addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -51,7 +45,6 @@
     _tableView.separatorColor = [UIColor whiteColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
-//    _tableView.tableHeaderView = headView;
     
     UIView *footer = [[UIView alloc] initWithFrame:CGRectZero];
     [_tableView setTableFooterView:footer];
@@ -60,9 +53,6 @@
     actv = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(320/2-50/2, self.view.frame.size.height/2-50/2, 50, 50)];
     [actv setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhite];
     [_tableView addSubview:actv];
-    
-//    msgArray = [[NSMutableArray alloc] init];
-    
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -117,7 +107,7 @@
         
     } erro:^(int error) {
         [actv performSelectorOnMainThread:@selector(stopAnimating) withObject:nil waitUntilDone:NO];
-//        [self performSelectorOnMainThread:@selector(alertFecharComErro:) withObject:[NSNumber numberWithInt:error] waitUntilDone:NO];
+
     }];
 
 }
@@ -175,7 +165,6 @@
 	lblText.text = objMsg.msg;
     lblText.numberOfLines = 0;
     [lblText sizeToFit];
-//    [lblText setBackgroundColor:[UIColor greenColor]];
     lblText.frame = CGRectMake(20,12, 280, lblText.frame.size.height);
     
     
