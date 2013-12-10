@@ -41,6 +41,109 @@
     imgTopo.frame = CGRectMake(0, 0, 320, 108.5);
     [self.view addSubview:imgTopo];
     
+//    UIImageView *imgLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_inter.png"]];
+//    imgLogo.frame = CGRectMake(2, 2, 60, 60);
+//    [_scrollView addSubview:imgLogo];
+//    
+    
+//    loader = [[UIActivityIndicatorView alloc]  initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+//    loader.frame = CGRectMake(290, 10, 20, 20);
+//    [_scrollView addSubview:loader];
+//    [loader startAnimating];
+    
+    
+//    // Total Label
+//    
+//    lblTotal =  [[UILabel alloc] initWithFrame:CGRectMake(0, imgTopo.frame.size.height + imgTopo.frame.origin.y + 15, 270, 90)];
+//    [lblTotal setFont:[UIFont boldSystemFontOfSize:90]];
+//    [lblTotal setTextColor:[UIColor whiteColor]];
+//    lblTotal.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblTotal.shadowOffset = CGSizeMake(0, 2.0);
+//    lblTotal.backgroundColor = [UIColor clearColor];
+//    lblTotal.text = @"75%";
+//    lblTotal.textAlignment = NSTextAlignmentCenter;
+//    [_scrollView addSubview:lblTotal];
+//    
+//    
+//    lblConcluido =  [[UILabel alloc] initWithFrame:CGRectMake(150, lblTotal.frame.size.height + lblTotal.frame.origin.y , 170, 30)];
+//    [lblConcluido setFont:[UIFont boldSystemFontOfSize:30]];
+//    [lblConcluido setTextColor:[UIColor whiteColor]];
+//    lblConcluido.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblConcluido.shadowOffset = CGSizeMake(0, 2.0);
+//    lblConcluido.backgroundColor = [UIColor clearColor];
+//    lblConcluido.text = @"Concluído";
+//    lblConcluido.textAlignment = NSTextAlignmentLeft;
+//    [_scrollView addSubview:lblConcluido];
+//    
+//    
+//    //P2
+//    
+//    UIImageView *imgP2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"p2.png"]];
+//    imgP2.frame = CGRectMake(240, lblConcluido.frame.size.height + lblConcluido.frame.origin.y + 25, 51.5, 93.5);
+//    [_scrollView addSubview:imgP2];
+//    
+//    
+//    lblP2 =  [[UILabel alloc] initWithFrame:CGRectMake(10, lblConcluido.frame.size.height + lblConcluido.frame.origin.y + 25, 210, 90)];
+//    [lblP2 setFont:[UIFont boldSystemFontOfSize:70]];
+//    [lblP2 setTextColor:[UIColor whiteColor]];
+//    lblP2.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblP2.shadowOffset = CGSizeMake(0, 2.0);
+//    lblP2.backgroundColor = [UIColor clearColor];
+//    lblP2.text = @"27/65";
+//    lblP2.textAlignment = NSTextAlignmentRight;
+//    [_scrollView addSubview:lblP2];
+//    
+//    
+//    //P3
+//    
+//    UIImageView *imgP3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"p3.png"]];
+//    imgP3.frame = CGRectMake(235, lblP2.frame.size.height + lblP2.frame.origin.y + 32, 64, 32.5);
+//    [_scrollView addSubview:imgP3];
+//    
+//    
+//    lblP3 =  [[UILabel alloc] initWithFrame:CGRectMake(10, lblP2.frame.size.height + lblP2.frame.origin.y + 2, 210, 90)];
+//    [lblP3 setFont:[UIFont boldSystemFontOfSize:70]];
+//    [lblP3 setTextColor:[UIColor whiteColor]];
+//    lblP3.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblP3.shadowOffset = CGSizeMake(0, 2.0);
+//    lblP3.backgroundColor = [UIColor clearColor];
+//    lblP3.text = @"6/65";
+//    lblP3.textAlignment = NSTextAlignmentRight;
+//    [_scrollView addSubview:lblP3];
+//    
+//    
+//    //P4
+//    
+//    UIImageView *imgP4 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"p4.png"]];
+//    imgP4.frame = CGRectMake(235, lblP3.frame.size.height + lblP3.frame.origin.y + 32, 64, 32.5);
+//    [_scrollView addSubview:imgP4];
+//    
+//    
+//    lblP4 =  [[UILabel alloc] initWithFrame:CGRectMake(10, lblP3.frame.size.height + lblP3.frame.origin.y + 2, 210, 90)];
+//    [lblP4 setFont:[UIFont boldSystemFontOfSize:70]];
+//    [lblP4 setTextColor:[UIColor whiteColor]];
+//    lblP4.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblP4.shadowOffset = CGSizeMake(0, 2.0);
+//    lblP4.backgroundColor = [UIColor clearColor];
+//    lblP4.text = @"0/65";
+//    lblP4.textAlignment = NSTextAlignmentRight;
+//    [_scrollView addSubview:lblP4];
+//    
+//    
+//    
+//    lblDataHora =  [[UILabel alloc] initWithFrame:CGRectMake(10, lblP4.frame.size.height + lblP4.frame.origin.y + 7, 300, 20)];
+//    [lblDataHora setFont:[UIFont systemFontOfSize:12]];
+//    [lblDataHora setTextColor:[UIColor blackColor]];
+////    lblDataHora.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+////    lblDataHora.shadowOffset = CGSizeMake(0, 2.0);
+//    lblDataHora.backgroundColor = [UIColor clearColor];
+//    lblDataHora.text = @"";
+//    lblDataHora.textAlignment = NSTextAlignmentCenter;
+//    lblDataHora.alpha = 0.5;
+//    [_scrollView addSubview:lblDataHora];
+//    
+//    
+    
     int Ytopo = 35;
     
     if(!IS_IPHONE_5)
@@ -51,6 +154,8 @@
     UILabel *lblDesenvolvido =  [[UILabel alloc] initWithFrame:CGRectMake(10,Ytopo, 300, 30)];
     [lblDesenvolvido setFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20]];
     [lblDesenvolvido setTextColor:[UIColor whiteColor]];
+//    lblDesenvolvido.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblDesenvolvido.shadowOffset = CGSizeMake(0, 2.0);
     lblDesenvolvido.backgroundColor = [UIColor clearColor];
     lblDesenvolvido.text = @"Desenvolvido por";
     lblDesenvolvido.textAlignment = NSTextAlignmentCenter;
@@ -60,6 +165,8 @@
     UILabel *lblMauricio =  [[UILabel alloc] initWithFrame:CGRectMake(10, lblDesenvolvido.frame.size.height + lblDesenvolvido.frame.origin.y + 5, 300, 40)];
     [lblMauricio setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:35]];
     [lblMauricio setTextColor:[UIColor whiteColor]];
+//    lblMauricio.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+//    lblMauricio.shadowOffset = CGSizeMake(0, 2.0);
     lblMauricio.backgroundColor = [UIColor clearColor];
     lblMauricio.text = @"Mauricio Meirelles";
     lblMauricio.textAlignment = NSTextAlignmentCenter;
@@ -75,7 +182,11 @@
     UIImageView *imgSocio = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"socio.png"]];
     imgSocio.frame = CGRectMake(10, imgGrupo.frame.size.height + imgGrupo.frame.origin.y + 30, 300, 56);
     [_scrollView addSubview:imgSocio];
-
+    
+    
+//    [_scrollView setBackgroundColor:[UIColor colorWithHexString:@"6E1311"]];
+    
+    
     
     UIButton *btComunidade = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     [btComunidade addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -194,7 +305,19 @@
 {
     
     [loader stopAnimating];
-
+    
+//    [self paraAnimacao];
+//    
+//    NSInteger erro = [nErro integerValue];
+//    NSString *key = [NSString stringWithFormat:@"erro%d",erro];
+//    
+//    NSString *mensagem = [self localized:key];
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[self localized:@"txtErro"] message:mensagem delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+//    [alert setTag:999];
+//    
+//    if (self.navigationController.topViewController==self)
+//        [alert show];
 }
 
 - (BOOL)shouldAutorotate {

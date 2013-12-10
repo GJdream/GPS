@@ -123,7 +123,16 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
+    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Offline" message:@"Câmera está offline" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//    [alert show];
+    
+//    [self.navigationController popViewControllerAnimated:YES];
 
+    
+    
+//    _webview.hidden = NO;
+//    [actv2 stopAnimating];
     
 }
 

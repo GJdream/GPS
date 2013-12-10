@@ -14,6 +14,22 @@
 
 @interface BEELoginCheckInController : UIViewController <KBKeyboardHandlerDelegate,UITextFieldDelegate, IIViewDeckControllerDelegate, UIScrollViewDelegate>
 {
+//    BEEDados *gpsDados;
+//    
+//    
+//    //Interface
+//    UILabel *lblTotal;
+//    UILabel *lblConcluido;
+//    
+//    UILabel *lblP2;
+//    UILabel *lblP3;
+//    UILabel *lblP4;
+//    
+//    UILabel *lblDataHora;
+//    
+//    UIActivityIndicatorView *loader;
+
+    
     KBKeyboardHandler *keyboard;
     float scrollInitHeight;
     UITextField *selectedTextField;

@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actv;
 @property (strong) NSString *linkJogo;
 @property (weak, nonatomic) IBOutlet UILabel *lblJogo;
+//@property (weak, nonatomic) IBOutlet UIPickerView *vouPicker;
 @property (weak, nonatomic) IBOutlet UIButton *btSetorOption;
 @property (weak, nonatomic) IBOutlet UIButton *btSalvar;
 @property (weak, nonatomic) IBOutlet UILabel *lblCampeonato;

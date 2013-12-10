@@ -28,15 +28,26 @@
 
 - (void)viewDidLoad
 {
+//    [super viewDidLoad];
 
+    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithHexString:@"C22825"];
     
     [self.view setBackgroundColor:[UIColor colorWithHexString:@"C22825"]];
     [_tableView setBackgroundColor:[UIColor clearColor]];
 
+//    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     UIImageView *imgTopo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topo.png"]];
     imgTopo.frame = CGRectMake(0, 0, 320, 108.5);
     [self.view addSubview:imgTopo];
+//    UIImageView *imgLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_inter.png"]];
+//    imgLogo.frame = CGRectMake(2, 2, 60, 60);
+//    [imgTopo addSubview:imgLogo];
+    
+//    UIButton *btComunidade = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+//    [btComunidade addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
+//    btComunidade.backgroundColor = [UIColor clearColor];
+//    [self.view addSubview:btComunidade];
     
     UIButton *btBack = [[UIButton alloc] initWithFrame:CGRectMake(10, 40, 80, 44)];
     [btBack addTarget:self action:@selector(sairClick) forControlEvents:UIControlEventTouchUpInside];
@@ -44,10 +55,12 @@
     [btBack setTitle:@"Sair" forState:UIControlStateNormal];
     [self.view addSubview:btBack];
     
+//    [headView addSubview:imgTopo];
     
     _tableView.separatorColor = [UIColor whiteColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
+//    _tableView.tableHeaderView = headView;
     
     UIView *footer = [[UIView alloc] initWithFrame:CGRectZero];
     [_tableView setTableFooterView:footer];
@@ -162,6 +175,22 @@
     return partidasArray.count;
 }
 
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    
+//    BEEMensagens *objMsg = [partidasArray objectAtIndex:indexPath.row];
+//    
+//    UILabel *lblAux = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, CGFLOAT_MAX)];
+//    lblAux.font = [UIFont boldSystemFontOfSize:20];
+//    lblAux.text = objMsg.msg;
+//    lblAux.numberOfLines = 0;
+//    [lblAux sizeToFit];
+// 
+//    return lblAux.frame.size.height + 24.0 + 31;
+//    
+//    
+//}
+
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -174,11 +203,23 @@
     BEEPartida *partidaObj = [partidasArray objectAtIndex:indexPath.row];
     
     UILabel *lblText = (UILabel *) [cell viewWithTag:11];
+//    [lblText setFrame:CGRectMake(0, 0,280, 1000)];
 	lblText.text = partidaObj.name;
+//    lblText.numberOfLines = 0;
+//    [lblText sizeToFit];
+//    [lblText setBackgroundColor:[UIColor greenColor]];
+//    lblText.frame = CGRectMake(20,12, 280, lblText.frame.size.height);
+    
+    
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"dd-MM-yyyy HH:mm"];
+//    NSString *strDate = [dateFormatter stringFromDate:objMsg.data];
     
     
     NSArray *cpDtLocal = [partidaObj.campeonatoDataLocal componentsSeparatedByString:@"-"];
-
+    
+//    NSString *trimmedString = [string stringByTrimmingCharactersInSet:
+//                               [NSCharacterSet whitespaceCharacterSet]];
     
     UILabel *lblCampeonato = (UILabel *) [cell viewWithTag:13];
     lblCampeonato.text = [[cpDtLocal objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
@@ -222,6 +263,12 @@
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
 }
+
+//- (void) viewWillDisappear:(BOOL)animated
+//{
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//    [super viewWillDisappear:animated];
+//}
 
 
 - (BOOL)shouldAutorotate {

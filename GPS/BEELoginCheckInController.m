@@ -212,7 +212,9 @@
 {
     keyboard.delegate = nil;
     keyboard = nil;
-
+    
+    //    [scrollingTimer invalidate];
+    //    scrollingTimer = nil;
 }
 
 - (BOOL)shouldAutorotate {

@@ -46,8 +46,10 @@
     
     
     _btSetorOption.backgroundColor = [UIColor colorWithRed:167/255.0 green:0/255.0 blue:20/255.0 alpha:1];
+//    _btSetorOption.alpha = 0.3;
     
     _btSalvar.backgroundColor = [UIColor colorWithRed:167/255.0 green:0/255.0 blue:20/255.0 alpha:1];
+//    _btSalvar.alpha = 0.3;
     
     lblVouOption = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, _btSetorOption.frame.size.width-10, CGFLOAT_MAX)];
 
@@ -115,6 +117,8 @@
         }
     }
     
+//    [_btSetorOption setTitle:optSelected.name forState:UIControlStateNormal];
+    
     [self fixBtText];
     
     if((_jogoSwitch.isOn && optSelected.value != 1) || !_jogoSwitch.isOn)
@@ -133,6 +137,8 @@
         _btSetorOption.hidden = NO;
     else
         _btSetorOption.hidden = YES;
+    
+//    [_vouPicker reloadAllComponents];
     
     
     if(partidaObj.encerrado)
@@ -185,6 +191,8 @@
         }
     }
     
+    //    [_btSetorOption setTitle:optSelected.name forState:UIControlStateNormal];
+    
     lblVouOption.frame = CGRectMake(5, 5, _btSetorOption.frame.size.width-10, CGFLOAT_MAX);
     lblVouOption.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
     lblVouOption.text = optSelected.name;
@@ -211,6 +219,39 @@
     }
 
 }
+
+//
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//{
+//    NSString *returnStr = @"";
+//    if (pickerView == _vouPicker)
+//    {
+//        BEEVouNaoVouOption *opt = (BEEVouNaoVouOption *)[partidaObj.vouSetor objectAtIndex:row];
+//        returnStr = opt.name;
+//    }
+//    
+//    return returnStr;
+//}
+//
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+//{
+//    if (pickerView == _vouPicker)
+//    {
+//        return [partidaObj.vouSetor count];
+//    }
+//}
+//
+//
+//- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+//{
+//    return 50;
+//}
+//
+//
+//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+//{
+//    return 1;
+//}
 
 
 -(void)voltarClick

@@ -44,7 +44,11 @@
     deckController.leftSize = 130;
     deckController.elastic = NO;
     deckController.panningCancelsTouchesInView = YES;
-
+    
+    /* To adjust speed of open/close animations, set either of these two properties. */
+    // deckController.openSlideAnimationDuration = 0.15f;
+    // deckController.closeSlideAnimationDuration = 0.5f;
+    
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
 
@@ -61,7 +65,9 @@
               stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     [[BEEManager singleton] savePushUser:pushId];
-
+    
+//    UIAlertView *aler = [[UIAlertView alloc] initWithTitle:@"token" message:pushId delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//    [aler show];
     
     NSLog(@"My token is: %@", pushId);
 }

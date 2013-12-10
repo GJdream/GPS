@@ -17,6 +17,8 @@
     BEEDados *gpsDados;
     
     
+    UIImageView *imgTopo;
+    
     //Interface
     UILabel *lblTotal;
     UILabel *lblConcluido;
@@ -25,9 +27,25 @@
     UILabel *lblP3;
     UILabel *lblP4;
     
+    UIImageView *imgP2;
+    UIImageView *imgP3;
+    UIImageView *imgP4;
+    
     UILabel *lblDataHora;
     
     UIActivityIndicatorView *loader;
+    
+    NSTimer *printData;
+    
+    BOOL showCountdown;
+    
+    UILabel *lblFalta;
+    
+    UILabel *lblDias;
+    UILabel *lblDiasTxt;
+    
+    UILabel *lblHoras;
+
 
 
 }
